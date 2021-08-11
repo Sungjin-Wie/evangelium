@@ -7,7 +7,7 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          유앙겔리온 테스트 홈페이지입니다.
+          유앙겔리온 홈페이지에 오신 것을 환영합니다.
         </p>
       </header>
     </div>
