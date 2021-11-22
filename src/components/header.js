@@ -3,8 +3,25 @@ import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import { useNavigate } from "react-router-dom";
+import logo from "./logo_mobile.png";
+
+const NavButton = (props) => {
+  const { route, text, navigate } = props;
+  return (
+    <Button variant="text" onClick={() => navigate(route)}>
+      <Typography
+        variant="body1"
+        noWrap
+        component="div"
+        color="black"
+        sx={{ my: 1, mx: 1.5 }}
+      >
+        {text}
+      </Typography>
+    </Button>
+  );
+};
 
 const Header = () => {
   const navigate = useNavigate();
@@ -24,38 +41,16 @@ const Header = () => {
             color="black"
             sx={{ display: { xs: "flex", sm: "block" } }}
           >
-            유앙겔리온
+            <img
+              src={logo}
+              alt="euanggelion"
+              style={{ height: 50, marginTop: 10 }}
+            />
           </Typography>
         </Button>
-        <nav>
-          <Link
-            variant="button"
-            color="text.primary"
-            href="#"
-            sx={{ my: 1, mx: 1.5 }}
-          >
-            소개
-          </Link>
-          <Link
-            variant="button"
-            color="text.primary"
-            href="#"
-            sx={{ my: 1, mx: 1.5 }}
-          >
-            주요사업
-          </Link>
-          <Link
-            variant="button"
-            color="text.primary"
-            href="#"
-            sx={{ my: 1, mx: 1.5 }}
-          >
-            찾아오는 길
-          </Link>
-        </nav>
-        {/* <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-          Login
-        </Button> */}
+        <NavButton route="/intro" text="소개" navigate={navigate} />
+        <NavButton route="/business" text="주요 사업" navigate={navigate} />
+        <NavButton route="/location" text="찾아오는 길" navigate={navigate} />
       </Toolbar>
     </AppBar>
   );

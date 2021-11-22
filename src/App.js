@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { Main } from "./pages";
+import { Business, Intro, Location, Main } from "./pages";
 import { Header, Footer } from "./components";
 
 const App = () => {
@@ -14,6 +14,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/intro" element={<Intro />} />
+        <Route path="/business" element={<Business />} />
+        <Route path="/location" element={<Location />} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
