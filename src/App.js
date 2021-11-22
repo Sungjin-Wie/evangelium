@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import pickaxe from './pickaxe.png';
 import './App.css';
 
