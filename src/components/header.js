@@ -39,13 +39,12 @@ const Header = () => {
             noWrap
             component="div"
             color="black"
-            sx={{ display: { xs: "flex", sm: "block" } }}
+            sx={{
+              display: { xs: "flex", sm: "block" },
+              height: { xs: 30, sm: 30, md: 50, lg: 50, xl: 50 },
+            }}
           >
-            <img
-              src={logo}
-              alt="euanggelion"
-              style={{ height: 50, marginTop: 10 }}
-            />
+            <img src={logo} alt="euanggelion" style={{ height: "100%" }} />
           </Typography>
         </Button>
         <NavButton route="/intro" text="소개" navigate={navigate} />
