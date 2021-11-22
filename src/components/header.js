@@ -15,7 +15,11 @@ const NavButton = (props) => {
         noWrap
         component="div"
         color="black"
-        sx={{ my: 1, mx: 1.5 }}
+        sx={{
+          my: 1,
+          mx: 1.5,
+          fontSize: { xs: 15 },
+        }}
       >
         {text}
       </Typography>
@@ -41,7 +45,7 @@ const Header = () => {
             color="black"
             sx={{
               display: { xs: "flex", sm: "block" },
-              height: { xs: 30, sm: 30, md: 50, lg: 50, xl: 50 },
+              height: { xs: 25, sm: 50, md: 50, lg: 50, xl: 50 },
             }}
           >
             <img src={logo} alt="euanggelion" style={{ height: "100%" }} />

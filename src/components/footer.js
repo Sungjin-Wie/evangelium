@@ -29,7 +29,7 @@ const Footer = () => {
     >
       {footers.map((footer) => (
         <Grid item xs={12} sm={6} key={footer.title}>
-          <Typography variant="h6" color="text.primary" gutterBottom>
+          <Typography variant="body2" color="text.primary" gutterBottom>
             {footer.title}
           </Typography>
           <ul>

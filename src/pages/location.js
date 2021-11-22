@@ -17,7 +17,7 @@ export default function Location() {
         component="main"
         sx={{ pt: 8, pb: 6 }}
       >
-        <pre style={{ margin: "auto" }}>{`회사 위치 페이지입니다.`}</pre>
+        <pre style={{ marginLeft: "20px" }}>{`회사 위치 페이지입니다.`}</pre>
         <div style={{ height: "600px" }}></div>
       </Container>
     </React.Fragment>

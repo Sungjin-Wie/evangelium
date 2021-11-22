@@ -17,7 +17,7 @@ export default function Main() {
         component="main"
         sx={{ pt: 8, pb: 6 }}
       >
-        <pre style={{ margin: "auto" }}>
+        <pre style={{ marginLeft: "20px" }}>
           {`유앙겔리온 사이트 메인 페이지입니다. 현재 사이트 제작 중입니다.`}
         </pre>
         <div style={{ height: "600px" }}></div>

@@ -88,10 +88,20 @@ export default function Business() {
         component="main"
         sx={{ pt: 8, pb: 6 }}
       >
-        <Typography variant="h3" component="div" gutterBottom>
+        <Typography
+          variant="h3"
+          component="div"
+          gutterBottom
+          sx={{ fontSize: { xs: 30 }, marginLeft: "20px" }}
+        >
           저희의 주요 사업을 소개합니다.
         </Typography>
-        <Typography variant="body1" component="div" gutterBottom>
+        <Typography
+          variant="body1"
+          component="div"
+          gutterBottom
+          sx={{ marginLeft: "20px" }}
+        >
           사업 소개 요약글이 들어갈 자리입니다.
         </Typography>
         <BasicTabs />
