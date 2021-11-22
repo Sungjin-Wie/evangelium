@@ -28,24 +28,22 @@ const Footer = () => {
         py: [3, 6],
       }}
     >
-      <Grid container spacing={12} justifyContent="space-evenly">
-        {footers.map((footer) => (
-          <Grid item xs={12} sm={6} key={footer.title}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-              {footer.title}
-            </Typography>
-            <ul>
-              {footer.description.map((item) => (
-                <li key={item}>
-                  <div variant="subtitle1" style={{ color: "grey" }}>
-                    {item}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </Grid>
-        ))}
-      </Grid>
+      {footers.map((footer) => (
+        <Grid item xs={12} sm={6} key={footer.title}>
+          <Typography variant="h6" color="text.primary" gutterBottom>
+            {footer.title}
+          </Typography>
+          <ul>
+            {footer.description.map((item) => (
+              <li key={item}>
+                <div variant="subtitle1" style={{ color: "grey" }}>
+                  {item}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </Grid>
+      ))}
       <Copyright sx={{ mt: 5 }} />
     </Container>
   );
