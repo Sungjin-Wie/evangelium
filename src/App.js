@@ -1,18 +1,24 @@
-import pickaxe from './pickaxe.png';
-import './App.css';
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { Main } from "./pages";
+import { Header, Footer } from "./components";
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={pickaxe} className="App-logo" alt="logo" />
-        <pre>
-          유앙겔리온 홈페이지에 오신 것을 환영합니다.
-          홈페이지 공사중입니다!
-        </pre>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/*" element={<Navigate to="/" />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
