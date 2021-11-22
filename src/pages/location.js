@@ -13,7 +13,7 @@ export default function Location() {
       {/* Hero unit */}
       <Container
         disableGutters
-        maxWidth="sm"
+        maxWidth="lg"
         component="main"
         sx={{ pt: 8, pb: 6 }}
       >
