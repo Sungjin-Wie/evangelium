@@ -1,5 +1,5 @@
 {
-  "homepage": "https://euanggelion.com",
+  "homepage": "https://sungjin-wie.github.io/evangelium/",
   "name": "evangelium-web",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build && cp CNAME ./build",
+    "commit": "git add . && git commit -m 'minor change' && git push origin master",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
